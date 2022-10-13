@@ -1,0 +1,10 @@
+param: Observable<string | null>;
+  constructor(private ar: ActivatedRoute) {
+    // const param = this.ar.snapshot.paramMap.get('year');
+    // console.log(param);
+    this.param = this.ar.paramMap.pipe(map((v) => v.get('year')));
+    this.param.subscribe((data) => console.log(data));
+  }
+
+
+  

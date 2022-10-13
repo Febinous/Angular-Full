@@ -1,0 +1,12 @@
+<div class="container p-5">
+  <h1>Learning Angular</h1>
+  <hr />
+  <p>
+    <a class="me-3" [routerLink]="'home'">Home</a>
+    <a class="me-3" routerLink="about">About</a>
+    <a class="me-3" [routerLink]="['report', 2002]">Report</a>
+    <a class="me-3" routerLink="contact">Contact</a>
+    <a class="me-3" routerLink="admin/dashboard">Contact</a>
+  </p>
+  <router-outlet></router-outlet>
+</div>

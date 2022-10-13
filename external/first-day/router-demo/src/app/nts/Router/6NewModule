@@ -1,0 +1,3 @@
+ng g m admin --routing
+
+ ng g c --skip-tests=true admin/dashboard

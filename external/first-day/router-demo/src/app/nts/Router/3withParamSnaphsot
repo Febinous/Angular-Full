@@ -1,0 +1,4 @@
+  constructor(private ar: ActivatedRoute) {
+    const param = this.ar.snapshot.paramMap.get('year');
+    console.log(param);
+  }
